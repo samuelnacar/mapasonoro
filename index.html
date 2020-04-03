@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Mapa</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900" rel="stylesheet">
+
+		
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-image="foto/Barcelona_titulo.jpg" data-audio-src="audio/jefedelestado.mp3"> 
+					
+
+				</section>
+				
+			
+
+				<section data-background-image="foto/Metro.jpg" data-audio-src="audio/Metro.mp3">
+
+					<h4> El día despúes de que se decretará el Estado de Alarma, Tansportes Metropolitanos de Barcelona calculó que el número de pasajeros había descendido entre el 70 y el 80 por ciento. El metro y sus aglomeraciones eran potenciales focos de infección. </h4>
+				</section>
+
+
+
+				<section data-background-image="foto/Boqueria.jpg" data-audio-src="audio/Boqueria.mp3">
+					<p> A pesar de todo muchos puestos de la Boqueria siguen abriendo. El mercado más famoso de toda Barcelona, casi no tiene  visitantes. Por eso sólo se mantienen aquellos puestos con productos de primera necesidad.</p>
+				</section> 
+
+				<section data-background-image="foto/ume.jpg" data-audio-src="audio/conversacionume.mp3" >
+					<p> Con objetivo de frenar el Coronavirus, tras decretarse el Estado de Alarma, el ejercito puso en marcha la Operación Balmis. La UME ha desplegado más de 1.100 efectivos por toda España que realizará labores de desinfección en lugares donde se detecta que alguna persona ha dado positivo por el virus. Desde residencias hasta aeropuertos. </p>
+					</section>
+
+					<section data-background-image="foto/ramblas.jpg" data-audio-src="audio/Ramblas.mp3">
+						<h4> Por eso, se dan imágenes inpensables como está de las Ramblas, la zona probablemente más concurrida de Barcelona, completamente vacia. El año pasado 85 millones de turistas visitaron España, record histórico. Hoy en las Ramblas ya no queda ni uno. </h4>
+				</section>
+
+
+
+				<section data-background-image="foto/sagrada.jpg" data-audio-src="audio/Sagrada.mp3">
+				<p> La Sagrada Familia como el cielo de Barcelona, el más puro del siglo, también se ve diferente. Majestuosa y sin la ruidosa masa de gente que la rodea está cerrada. 11.977.277 de personas la visitarón el año pasado, este año es la primera vez que sus campanas suenan en medio de un silencio sepulcral. </p>	
+				</section>
+
+				<section data-background-image="foto/plcat.jpg" data-audio-src="audio/palomas.mp3">
+					<p> En plaza cataluña otro de los centros donde se concentran mayor número de turistas, las palomas han tomado las calles. Y la plaza permanece vacia y protegida por un fino cordón policial de plástico.  </p>
+				</section>
+
+				<section data-background-image="foto/Macba-1.jpg" data-audio-src="audio/Macba.mp3" > <p> Cientos de sin techo sin un lugar donde pasar la cuarentena, deambulan por las calles de una Barcelona vacíada que permite visibilizar la realidad del problema, la pobreza crónica de una ciudad que muestra siempre su cara más pujante al turismo y que hoy vacía se siente como desnuda si no fuera... </p>
+					</section>
+
+				
+
+				<section data-background-image="foto/Clinic.jpg" data-audio-src="audio/Aplauso.mp3">
+					<p> Por sus heroínas. Y la rutina ya consagrada en toda España de aplaudir la labor del personal sanitario, que se enfrenta diariamente al coronavirus.  </p>
+				</section>
+
+				
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/demo.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+
+
+		Reveal.initialize({
+		hash: true,
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/highlight/highlight.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/audio-slideshow/RecordRTC.js', condition: function( ) { return !!document.body.classList; } },
+			{ src: 'plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
+			{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+		],
+		audio: {
+			prefix: 'audio/', 	// audio files are stored in the "audio" folder
+			suffix: '.mp3',		// audio files have the ".ogg" ending
+			textToSpeechURL: null,  // the URL to the text to speech converter
+			defaultNotes: false, 	// use slide notes as default for the text to speech converter
+			defaultText: false, 	// use slide text as default for the text to speech converter
+			advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+			autoplay: true,	// automatically start slideshow
+			defaultDuration: 5,	// default duration in seconds if no audio is available
+			defaultAudios: false,	// try to play audios with names such as audio/1.2.ogg
+			playerOpacity: 0.05,	// opacity value of audio player if unfocused
+			playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+			startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+		}
+});
+
+		</script>
+	</body>
+</html>
